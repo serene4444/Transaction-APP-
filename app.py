@@ -85,7 +85,7 @@ def search_transactions():
         max_amount = float(request.form["max_amount"])
 
         filtered_transactions = [
-            transactions
+            transaction
             for transaction in transactions
             if min_amount <= transaction["amount"] <= max_amount
         ]
